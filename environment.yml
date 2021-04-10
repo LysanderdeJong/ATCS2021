@@ -167,4 +167,3 @@ dependencies:
   - zlib=1.2.11=h62dcd97_1010
   - pip:
     - en-core-web-sm==3.0.0
-prefix: C:\Programs\miniconda3\envs\atcs
