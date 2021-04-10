@@ -115,7 +115,7 @@ if __name__ == "__main__":
     # in (https://arxiv.org/abs/1802.05883) we use the following :
     # SICKRelatedness (Sick-R) needs torch cuda to work (even when using logistic regression), 
     # but STS14 (semantic textual similarity) is a similar type of semantic task
-    transfer_tasks = ['MR', 'CR', 'MPQA', 'SUBJ', 'SST2', 'TREC',
+    transfer_tasks = ['SNLI', 'MR', 'CR', 'MPQA', 'SUBJ', 'SST2', 'TREC',
                       'MRPC', 'SICKEntailment', 'STS14']
 
     # senteval prints the results and returns a dictionary with the scores

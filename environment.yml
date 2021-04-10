@@ -21,10 +21,10 @@ dependencies:
   - botocore=1.20.49=pyhd8ed1ab_0
   - brotlipy=0.7.0=py38h2bbff1b_1003
   - bz2file=0.98=py_0
-  - ca-certificates=2020.12.5=h5b45459_0
+  - ca-certificates=2021.1.19=haa95532_1
   - cachetools=4.2.1=pyhd8ed1ab_0
   - catalogue=2.0.1=py38haa244fe_2
-  - certifi=2020.12.5=py38haa244fe_1
+  - certifi=2020.12.5=py38haa95532_0
   - cffi=1.14.5=py38hcd4344a_0
   - chardet=4.0.0=py38haa95532_1003
   - click=7.1.2=pyh9f0ad1d_0
@@ -39,6 +39,7 @@ dependencies:
   - entrypoints=0.3=pyhd8ed1ab_1003
   - fsspec=0.9.0=pyhd8ed1ab_0
   - future=0.18.2=py38haa244fe_3
+  - git=2.23.0=h6bb4b03_0
   - google-api-core=1.26.2=pyhd8ed1ab_0
   - google-auth=1.28.0=pyh44b312d_0
   - google-auth-oauthlib=0.4.1=py_2
@@ -89,7 +90,7 @@ dependencies:
   - numpy=1.19.2=py38hadc3359_0
   - numpy-base=1.19.2=py38ha3acd2a_0
   - oauthlib=3.0.1=py_0
-  - openssl=1.1.1k=h8ffe710_0
+  - openssl=1.1.1k=h2bbff1b_0
   - packaging=20.9=pyh44b312d_0
   - pandas=1.2.3=py38hf11a4ad_0
   - pandoc=2.13=h8ffe710_0
@@ -166,3 +167,4 @@ dependencies:
   - zlib=1.2.11=h62dcd97_1010
   - pip:
     - en-core-web-sm==3.0.0
+prefix: C:\Programs\miniconda3\envs\atcs

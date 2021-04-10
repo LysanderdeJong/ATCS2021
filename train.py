@@ -119,7 +119,7 @@ if __name__ == '__main__':
     parser = SentenceEmbeddings.add_model_specific_args(parser)
     
     # trainer hyperparameters
-    parser.add_argument('--epochs', default=20, type=int,
+    parser.add_argument('--epochs', default=30, type=int,
                         help='Number of epochs to train.')
     parser.add_argument('--batch_size', default=64, type=int,
                         help='Batch size for training.')
