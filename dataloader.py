@@ -5,7 +5,7 @@ import torch.nn.functional as F
 
 from torchtext.legacy import data
 from torchtext.legacy.datasets import SNLI
-from torchtext.legacy.data import Field, LabelField, BucketIterator
+from torchtext.legacy.data import Field, LabelField
 
 def create_dataset():
     TEXT = Field(tokenize='spacy', tokenizer_language='en_core_web_sm', init_token='<BOS>', eos_token='<EOS>', lower=True, batch_first=True)

@@ -1,11 +1,8 @@
 import os
 import argparse
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-from torchtext.legacy.data import BucketIterator
 import pytorch_lightning as pl
-from pytorch_lightning.callbacks import ModelCheckpoint, LearningRateMonitor, EarlyStopping
+from pytorch_lightning.callbacks import ModelCheckpoint
+from torchtext.legacy.data import BucketIterator
 from dataloader import create_dataset
 from utils import get_model
 from pl_model import SentenceEmbeddings
@@ -137,7 +134,7 @@ if __name__ == '__main__':
     parser.add_argument('--plugins', default=None, type=str,
                         help='Modify the multi-gpu training path. See docs lightning docs for details.')
     
-    parser.add_argument('--gpus', default=0, type=str,
+    parser.add_argument('--gpus', default=1, type=str,
                         help='Which gpus to use.')
     
     parser.add_argument('--checkpoint_path', default=None, type=str,

@@ -2,9 +2,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import pytorch_lightning as pl
-import numpy as np
-import os
-import math
 
 from pytorch_lightning.metrics.functional import accuracy
 from modules import Words, LSTM
@@ -100,8 +97,8 @@ class SentenceEmbeddings(pl.LightningModule):
         
         # model parameters
         parser.add_argument('--model', default='words', type=str,
-                        choices=['words', 'lstm', 'bilstm', 'bilstm_max'],
-                        help='Which model to train.')
+                            choices=['words', 'lstm', 'bilstm', 'bilstm_max'],
+                            help='Which model to train.')
         parser.add_argument('--input_size', default=300, type=int,
                             help='Input size of the lstm module, should be the size of the embeddings.')
         parser.add_argument('--hidden_size', default=2048, type=int,

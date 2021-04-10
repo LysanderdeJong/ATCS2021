@@ -46,7 +46,10 @@ def create_model(params):
         state_dict = torch.load(params.model_params['checkpoint_path'], map_location=model.device)
         if 'state_dict' in state_dict.keys():
             state_dict = state_dict['state_dict']
-        del state_dict['embedding.weight']
+        try:
+            del state_dict['embedding.weight']
+        except Exception:
+            pass
         model.load_state_dict(state_dict, strict=False)
     if params.model_params['model'] != 'words':
         assert state_dict
