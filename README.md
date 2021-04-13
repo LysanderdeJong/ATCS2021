@@ -135,7 +135,7 @@ We include a jupyter notebook demo in which we show our models on the NLI task. 
 
 The demo allows to to predict the entailment for any givven premise and hypothesis. See [demo.ipynb](https://github.com/LysanderdeJong/ATCS2021/blob/main/demo.ipynb) for futher details.
 
-Also included is a small report which goes into greater detail on the performance of the various models.
+Also included is a small [report](https://github.com/LysanderdeJong/ATCS2021/blob/main/report.pdf) which goes into greater detail on the performance of the various models.
 
 <!-- RESULTS -->
 ## Results
