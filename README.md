@@ -122,7 +122,7 @@ The trained models can be avaluated using:
 ```sh
 python eval.py --model model_name --checkpoint_path "path_to_checkpoint"
 ```
-For the checkpoint you can use your own our download our from the releases section on github.
+For the checkpoint you can use your own or download our from the releases section on github.
 
 The program will fit an MLP to your sentence embeddings and uses it to evaluate various NLP tasks.
 The accuracy on these taskes is stored in a dictionary which is saved to the current directory so it can quickly be retieved for later analysis.
