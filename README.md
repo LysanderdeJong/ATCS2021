@@ -145,15 +145,15 @@ Below are the results for the four models on the validation en test sets for the
 
 | Model      | #params | SNLI |CR |  MR |  MPQA | SUBJ | SST2 | TREC | MRPC | SICK-E | SICK-R | STS14 | micor | macro |
 | :---       |  :---:  |:---: |:---:|:---:|:---: |:---:| :---:|:---: |:---: | :---:  | :---:  | :---: | :---: | :---: |
-| Words      |    0    |65.87 |79.94|78.00|88.22 |91.75|79.01 |74.27 |72.79 |70.4    | 0.696  |0.55/0.56|82.54| 79.30 |
-| LSTM       |  19.3 M |72.78 |81.24|77.81|88.38 |86.04|70.76 |57.70 |71.66 |79.4    | 0.762  |0.49/0.47|79.27| 76.62 |
-| BiLSTM     |  38.5 M |77.25 |84.01|80.41|89.19 |90.93|77.29 |82.01 |71.91 |84.8    | 0.840  |0.53/0.52|84.45| 82.57 |
-| BiLSTM_Max |  38.5 M |84.39 |83.98|79.92|89.63 |92.83|81.54 |84.21 |74.93 |86.2    | 0.892  |0.69/0.67|85.47| 84.15 |
+| [Words](https://github.com/LysanderdeJong/ATCS2021/releases/download/v1.0/checkpoint_words.pth)      |    0    |65.87 |79.94|78.00|88.22 |91.75|79.01 |74.27 |72.79 |70.4    | 0.696  |0.55/0.56|82.54| 79.30 |
+| [LSTM](https://github.com/LysanderdeJong/ATCS2021/releases/download/v1.0/checkpoint_lstm.pth)       |  19.3 M |72.78 |81.24|77.81|88.38 |86.04|70.76 |57.70 |71.66 |79.4    | 0.762  |0.49/0.47|79.27| 76.62 |
+| [BiLSTM](https://github.com/LysanderdeJong/ATCS2021/releases/download/v1.0/checkpoint_bilstm.pth)    |  38.5 M |77.25 |84.01|80.41|89.19 |90.93|77.29 |82.01 |71.91 |84.8    | 0.840  |0.53/0.52|84.45| 82.57 |
+| [BiLSTM-Max](https://github.com/LysanderdeJong/ATCS2021/releases/download/v1.0/checkpoint_bilstm_max.pth) |  38.5 M |84.39 |83.98|79.92|89.63 |92.83|81.54 |84.21 |74.93 |86.2    | 0.892  |0.69/0.67|85.47| 84.15 |
 
 ### Test
 | Model      | #params | SNLI |CR |  MR |  MPQA | SUBJ | SST2 | TREC | MRPC | SICK-E | SICK-R | STS14 | micor | macro |
 | :---       |  :---:  |:---: |:---:|:---:|:---: |:---:| :---:|:---: |:---: | :---:  | :---:  | :---: | :---: | :---: |
-| Words      |    0    |64.71 |78.49|77.47|87.86 |91.45|81.05 |81.6  |71.77 |75.22   | 0.763  |0.55/0.56|82.96| 80.61 |
-| LSTM       |  19.3 M |71.14 |79.52|77.12|87.93 |85.35|68.04 |47.4  |69.28 |80.70   | 0.793  |0.49/0.47|81.18| 74.42 |
-| BiLSTM     |  38.5 M |75.86 |83.05|79.74|88.59 |90.44|79.02 |85.2  |71.71 |84.55   | 0.857  |0.53/0.52|84.84| 82.79 |
-| BiLSTM_Max |  38.5 M |83.95 |82.73|79.03|88.91 |92.28|83.75 |89.8  |74.72 |85.95   | 0.888  |0.69/0.67|85.66| 84.65 |
+| [Words](https://github.com/LysanderdeJong/ATCS2021/releases/download/v1.0/checkpoint_words.pth)      |    0    |64.71 |78.49|77.47|87.86 |91.45|81.05 |81.6  |71.77 |75.22   | 0.763  |0.55/0.56|82.96| 80.61 |
+| [LSTM](https://github.com/LysanderdeJong/ATCS2021/releases/download/v1.0/checkpoint_lstm.pth)       |  19.3 M |71.14 |79.52|77.12|87.93 |85.35|68.04 |47.4  |69.28 |80.70   | 0.793  |0.49/0.47|81.18| 74.42 |
+| [BiLSTM](https://github.com/LysanderdeJong/ATCS2021/releases/download/v1.0/checkpoint_bilstm.pth)    |  38.5 M |75.86 |83.05|79.74|88.59 |90.44|79.02 |85.2  |71.71 |84.55   | 0.857  |0.53/0.52|84.84| 82.79 |
+| [BiLSTM-Max](https://github.com/LysanderdeJong/ATCS2021/releases/download/v1.0/checkpoint_bilstm_max.pth) |  38.5 M |83.95 |82.73|79.03|88.91 |92.28|83.75 |89.8  |74.72 |85.95   | 0.888  |0.69/0.67|85.66| 84.65 |
