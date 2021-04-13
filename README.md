@@ -133,7 +133,7 @@ This repo also includes these results in the "results_model.pt" files.
 ## Demo and Analysis
 We include a jupyter notebook demo in which we show our models on the NLI task. We also include more detailed results showing the different properties the setence embeddings possess.
 
-The demo allows to to predict the entailment for any givven premise and hypothesis. See [demo.ipynb](https://github.com/LysanderdeJong/ATCS2021/blob/main/demo.ipynb) for futher details.
+The demo allows to to predict the entailment for any given premise and hypothesis. See [demo.ipynb](https://github.com/LysanderdeJong/ATCS2021/blob/main/demo.ipynb) for futher details.
 
 Also included is a small [report](https://github.com/LysanderdeJong/ATCS2021/blob/main/report.pdf) which goes into greater detail on the performance of the various models.
 
