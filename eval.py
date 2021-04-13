@@ -66,8 +66,7 @@ def prepare(params, samples):
     """
     params.TEXT = create_dataset(samples)
     params.model = create_model(params)
-    params.w2i = params.TEXT.stoi
-    params.process = lambda x: torch.tensor([params.w2i['<BOS>']] + [params.w2i[token] for token in x] + [params.w2i['<EOS>']])
+    params.process = lambda x: torch.tensor([params.TEXT['<BOS>']] + [params.TEXT[token] for token in x] + [params.TEXT['<EOS>']])
     return
 
 def batcher(params, batch):
@@ -79,7 +78,7 @@ def batcher(params, batch):
     
     """
     tensor_data = list(map(params.process, batch))
-    tensor_data = torch.nn.utils.rnn.pad_sequence(tensor_data, batch_first=True, padding_value=3)
+    tensor_data = torch.nn.utils.rnn.pad_sequence(tensor_data, batch_first=True, padding_value=params.TEXT['<pad>'])
     tensor_data = tensor_data.to(params.model.device)
     with torch.no_grad():
         sentence_embeddings = params.model.feature_forward(tensor_data)
@@ -95,7 +94,7 @@ params_senteval = {'task_path': PATH_TO_DATA, 'usepytorch': True, 'kfold': 10}
 # this is the config for the NN classifier but we are going to use scikit-learn logistic regression with 10 kfold
 # usepytorch = False 
 params_senteval['classifier'] = {'nhid': 0, 'optim': 'adam', 'batch_size': 64,
-                        'tenacity': 5, 'epoch_size': 4}
+                                'tenacity': 5, 'epoch_size': 4}
 
 # Set up logger
 logging.basicConfig(format='%(asctime)s : %(message)s', level=logging.DEBUG)
