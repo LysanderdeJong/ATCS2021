@@ -97,7 +97,8 @@ to see what other switches exist.
 
 NOTE: If during the proces of downloading the dataset you get an extraction error, please axtract it manualy. At the moment torchtext has trouble automatically extracting the SNLI_1.0.zip file.
 
-After training has finished you can find the model checkpoint in "./logs/lighting_logs", together with a tensorboard file.
+After training has finished you can find the model checkpoint in "./logs/lighting_logs", together with a tensorboard file. 
+Tensorboard files to view the training progress can be donwloaded [here](https://github.com/LysanderdeJong/ATCS2021/releases/download/v1.0/tensorboard_logs.7z).
 
 ### Evaluation
 We evaluate our model using [SentEval](https://github.com/facebookresearch/SentEval). Visit their github and read their paper so get a better discription of each NLP taks.
@@ -140,8 +141,6 @@ Also included is a small [report](https://github.com/LysanderdeJong/ATCS2021/blo
 <!-- RESULTS -->
 ## Results
 Below are the results for the four models on the validation en test sets for the various tasks in [SentEval](https://github.com/facebookresearch/SentEval).
-
-Tensorboard files to view the training progress can be donwloaded [here](https://github.com/LysanderdeJong/ATCS2021/releases/download/v1.0/tensorboard_logs.7z).
 
 ### Validation
 
