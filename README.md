@@ -139,7 +139,8 @@ Also included is a small [report](https://github.com/LysanderdeJong/ATCS2021/blo
 
 <!-- RESULTS -->
 ## Results
-Below are the results for the four models on the validation en test sets for the various tasks in [SentEval](https://github.com/facebookresearch/SentEval)
+Below are the results for the four models on the validation en test sets for the various tasks in [SentEval](https://github.com/facebookresearch/SentEval).
+Tesnorboard files to view the training progress can be donwloaded [here](https://github.com/LysanderdeJong/ATCS2021/releases/download/v1.0/tensorboard_logs.7z).
 
 ### Validation
 
