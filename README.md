@@ -15,6 +15,9 @@ Code for the ATCS assignment 2: Learning sentence representations
       <a href="#getting-started">Getting Started</a>
     </li>
     <li>
+      <a href="#code-structure">Code Structure</a>
+    </li>
+    <li>
       <a href="#usage">Usage</a>
       <ul>
         <li><a href="#training">Training</a></li>
@@ -76,6 +79,19 @@ Since we are using [Spacy](https://spacy.io/) as our tokenizer, install it using
 ```sh
 python -m spacy download en_core_web_sm
 ```
+
+<!-- Code Structure -->
+## Code Structure
+```bash
+dataloader.py       # Transforms the SNLI dataset into an iterator
+demo.ipynb          # Contains a demo to test the various models
+eval.py             # Evaluates the trained model on SentEval tasks
+modules.py          # Contains the various model modules
+pl_model.py         # Combines the modules into a pytorch lightning module
+train.py            # Contains the code to train various models from scratch
+utils.py            # Contains utilities, function to create the correct lighting module
+```
+
    
 <!-- USAGE EXAMPLES -->
 ## Usage
